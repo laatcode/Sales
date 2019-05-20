@@ -5,9 +5,7 @@ use Phroute\Phroute\RouteCollector;
 $route = $_GET['route'] ?? '/';
 $router = new RouteCollector();
 
-$router->get('/', function(){
-  return 'Root';
-});
+$router->controller('/', App\Controllers\IndexController::class);
 
 try {
   $dispatcher = new Phroute\Phroute\Dispatcher($router->getData());
