@@ -1,10 +1,10 @@
 <?php
 namespace App\Controllers;
 
-class IndexController {
+class IndexController extends BaseController {
 
   public function getIndex() {
-    return "Root from Controller";
+    return $this->render('index.html');
   }
 
 }
