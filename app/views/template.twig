@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Sales</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ 'public/assets/css/styles.css' | url }}">
   </head>
   <body>
     <header class="header">
-      Header
+      <a href="{{ '' | url }}">
+      <img class="logo" src="" alt="Logo" height="40px">
+      </a>
+      <h1>Company</h1>
     </header>
     <div class="content">
       {% block content %}{% endblock %}
     </div>
     <footer class="footer">
-      Footer
+      Creado por Luis Angel Avila Torres. <b>Twitter:</b> <a target="_blank" href="https://twitter.com/laatcode">@laatcode</a> <b>Correo:</b> <a href="mailto:luisangelavilatorres@gmail.com">luisangelavilatorres@gmail.com</a>
     </footer>
   </body>
 </html>
