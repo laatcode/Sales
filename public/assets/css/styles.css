@@ -1,8 +1,8 @@
 :root {
   --bgTheme: #7E969E;
   --bgMenu: #323639;
-  --bdSubmenu: #3C4043;
-  --bgMenuFocus: #78A1BB;
+  --bgSubmenu: #474B4F;
+  --bgMenuFocus: #5D96BA;
   --bgBody: #F3F5F9;
 }
 
@@ -52,10 +52,9 @@ body {
 }
 
 .menu li {
-  padding: 5px;
 }
 
-.menu li:hover {
+.menu li a:hover {
   background: var(--bgMenuFocus);
 }
 
@@ -65,7 +64,22 @@ body {
   font-weight: bold;
   display: block;
   line-height: 1.5rem;
-  padding-left: 20px;
+  padding: 5px 15px;
+}
+
+.menu .fas {
+  margin-right: 10px;
+  line-height: 1.5rem;
+}
+
+.menu .fa-chevron-right {
+  float: right;
+  margin-right: 0;
+  line-height: 1.5rem;
+}
+
+.menu ul ul li a {
+  background: var(--bgSubmenu);
 }
 
 .footer {
